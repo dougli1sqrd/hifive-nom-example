@@ -6,6 +6,11 @@ From http://osblog.stephenmarz.com/ch0.html
 1. `rustup override set nightly` in directory
 2. `rustup target add riscv32imac-unknown-none-elf`
 
+## Fixing nom memchr std lib error:
+See https://github.com/Geal/nom/issues/1457
+
+Essentally the fix involves updating a project to edition 2021
+
 ## Running
 
 This example project is to demonstrate a `std` conflict with `memchr`, a dependency of the `nom` crate.
